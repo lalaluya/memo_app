@@ -9,9 +9,9 @@ enum HomeTab { list, tags, my }
 
 extension HomeTabX on HomeTab {
   String get label => switch (this) {
-        HomeTab.list => '绗旇',
-        HomeTab.tags => '鏍囩',
-        HomeTab.my => '鎴戠殑',
+        HomeTab.list => '笔记',
+        HomeTab.tags => '标签',
+        HomeTab.my => '我的',
       };
 }
 

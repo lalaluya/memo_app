@@ -51,3 +51,6 @@ app.*.map.json
 # Keystore
 **/keystore/*.jks
 **/key.properties
+
+# Local screenshot tooling (Node scripts + node_modules)
+tools/screenshots/

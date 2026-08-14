@@ -130,4 +130,4 @@ final effectivePaletteProvider = Provider<AppPalette>((ref) {
       : AppPalette.light;
 });
 
-const kDefaultTags = ['鏃ュ父', '闅忔兂', '鎽樺綍', '寰呭姙'];
+const kDefaultTags = ['日常', '随想', '摘录', '待办'];

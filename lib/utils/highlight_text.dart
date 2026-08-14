@@ -1,4 +1,4 @@
-﻿import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
 /// 鎶?query 鍦?text 閲屽嚭鐜扮殑瀛愪覆鐢?highlightStyle 娓叉煋锛屽叾浣欐寜 baseStyle 娓叉煋
 TextSpan buildHighlightSpan(

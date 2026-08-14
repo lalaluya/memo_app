@@ -28,7 +28,7 @@ class _MemoAppState extends ConsumerState<MemoApp> {
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: '鎷惧厜 路 鐑涚儸绗旇',
+      title: '拾光 · 烛烬笔记',
       theme: buildThemeData(palette),
       home: settings.lockEnabled
           ? LockScreen(onUnlock: () {

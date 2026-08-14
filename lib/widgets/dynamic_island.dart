@@ -1,4 +1,4 @@
-﻿import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
 class DynamicIsland extends StatelessWidget {
   const DynamicIsland({super.key});

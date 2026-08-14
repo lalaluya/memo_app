@@ -1,4 +1,4 @@
-﻿import '../db/memo_database.dart';
+import '../db/memo_database.dart';
 import '../models/memo.dart';
 
 class MemoRepository {

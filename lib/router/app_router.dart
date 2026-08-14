@@ -1,4 +1,4 @@
-﻿import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
 import '../screens/about/about_screen.dart';
 import '../screens/detail/memo_detail_screen.dart';

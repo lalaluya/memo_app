@@ -9,10 +9,16 @@ class MemoDatabase {
 
   static Future<Database> get instance async {
     if (_db != null) return _db!;
-    final dir = await getApplicationDocumentsDirectory();
-    final path = p.join(dir.path, 'memo_app.db');
+    String dbPath = 'memo_app.db';
+    try {
+      final dir = await getApplicationDocumentsDirectory();
+      dbPath = p.join(dir.path, 'memo_app.db');
+    } catch (_) {
+      // Web or platform without path_provider: keep default name.
+      // sqflite_common_ffi_web stores it under IndexedDB.
+    }
     _db = await openDatabase(
-      path,
+      dbPath,
       version: 1,
       onCreate: (db, version) async {
         await db.execute('CREATE TABLE memos(id INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT NOT NULL, body TEXT NOT NULL, tag TEXT NOT NULL, created_at INTEGER NOT NULL, updated_at INTEGER NOT NULL)');
