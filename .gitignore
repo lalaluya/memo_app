@@ -48,3 +48,6 @@ app.*.map.json
 *.lock
 /.metadata
 .cxx/
+# Keystore
+**/keystore/*.jks
+**/key.properties
